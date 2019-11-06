@@ -1,0 +1,73 @@
+﻿<Window x:Class="Steganografia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Steganografia"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="8.5*"></RowDefinition>
+                    <RowDefinition Height="1.5*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Border Background="#FFDDDDDD" Margin="10">
+                        <Image></Image>
+                    </Border>
+                </Grid>
+                <Grid Grid.Row="1" Margin="10,0,10,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Wczytaj" Grid.Column="0" Padding="10,5,10,5"></Button>
+                    <Button Content="Odszyfruj" Margin="10,0,0,0" Grid.Column="1" Padding="10,5,10,5"></Button>
+                    <Label VerticalAlignment="Center" HorizontalAlignment="Right" Content="25B" Grid.Column="2"></Label>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="8.5*"></RowDefinition>
+                    <RowDefinition Height="1.5*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Border Background="#FFDDDDDD" Margin="10">
+                        <Image></Image>
+                    </Border>
+                </Grid>
+                <Grid Grid.Row="1" Margin="10,0,10,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Zapisz" Grid.Column="0" Padding="10,5,10,5"></Button>
+                    <Label VerticalAlignment="Center" HorizontalAlignment="Right" Content="25B" Grid.Column="1"></Label>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Margin="0,0,10,0">
+                <TextBox Background="#FFDDDDDD" AcceptsReturn="True" Padding="10" TextWrapping="Wrap"></TextBox>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Button VerticalAlignment="Top" Content="Szyfruj" Height="40"></Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
