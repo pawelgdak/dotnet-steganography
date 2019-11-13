@@ -23,7 +23,7 @@
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
                     <Border Background="#FFDDDDDD" Margin="10">
-                        <Image></Image>
+                        <Image Name="originalImage"></Image>
                     </Border>
                 </Grid>
                 <Grid Grid.Row="1" Margin="10,0,10,0">
@@ -32,7 +32,7 @@
                         <ColumnDefinition Width="Auto"></ColumnDefinition>
                         <ColumnDefinition Width="1*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <Button Content="Wczytaj" Grid.Column="0" Padding="10,5,10,5"></Button>
+                    <Button Content="Wczytaj" Grid.Column="0" Padding="10,5,10,5" Click="Button_Click"></Button>
                     <Button Content="Odszyfruj" Margin="10,0,0,0" Grid.Column="1" Padding="10,5,10,5"></Button>
                     <Label VerticalAlignment="Center" HorizontalAlignment="Right" Content="25B" Grid.Column="2"></Label>
                 </Grid>
@@ -44,7 +44,7 @@
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
                     <Border Background="#FFDDDDDD" Margin="10">
-                        <Image></Image>
+                        <Image Name="modifiedImage"></Image>
                     </Border>
                 </Grid>
                 <Grid Grid.Row="1" Margin="10,0,10,0">
@@ -63,10 +63,10 @@
                 <ColumnDefinition Width="1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0" Margin="0,0,10,0">
-                <TextBox Background="#FFDDDDDD" AcceptsReturn="True" Padding="10" TextWrapping="Wrap"></TextBox>
+                <TextBox Name="textInput" Background="#FFDDDDDD" AcceptsReturn="True" Padding="10" TextWrapping="Wrap"></TextBox>
             </Grid>
             <Grid Grid.Column="1">
-                <Button VerticalAlignment="Top" Content="Szyfruj" Height="40"></Button>
+                <Button VerticalAlignment="Top" Content="Szyfruj" Height="40" Click="Button_Click_1"></Button>
             </Grid>
         </Grid>
     </Grid>
