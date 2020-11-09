@@ -33,8 +33,7 @@
                         <ColumnDefinition Width="1*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Button Content="Wczytaj" Grid.Column="0" Padding="10,5,10,5" Click="Button_Click"></Button>
-                    <Button Content="Odszyfruj" Margin="10,0,0,0" Grid.Column="1" Padding="10,5,10,5"></Button>
-                    <Label VerticalAlignment="Center" HorizontalAlignment="Right" Content="25B" Grid.Column="2"></Label>
+                    <Button Content="Odszyfruj" Margin="10,0,0,0" Grid.Column="1" Padding="10,5,10,5" Click="Button_Click_3"></Button>
                 </Grid>
             </Grid>
             <Grid Grid.Column="1">
@@ -52,8 +51,7 @@
                         <ColumnDefinition Width="Auto"></ColumnDefinition>
                         <ColumnDefinition Width="1*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <Button Content="Zapisz" Grid.Column="0" Padding="10,5,10,5"></Button>
-                    <Label VerticalAlignment="Center" HorizontalAlignment="Right" Content="25B" Grid.Column="1"></Label>
+                    <Button Content="Zapisz" Grid.Column="0" Padding="10,5,10,5" Click="Button_Click_2"></Button>
                 </Grid>
             </Grid>
         </Grid>
